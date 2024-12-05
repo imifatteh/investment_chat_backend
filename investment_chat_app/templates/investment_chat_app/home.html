@@ -4,65 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Investment Chat</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        #chat-container {
-            width: 500px;
-            height: 400px;
-            border: 1px solid #ccc;
-            overflow-y: scroll;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    {% csrf_token %}
 </head>
 <body>
-    <h1>Investment Chat</h1>
-    <div id="chat-container"></div>
-    <input type="text" id="user-input" placeholder="Type your message...">
-    <button onclick="sendMessage()">Send</button>
+    <div id="root"></div>
 
-    <script>
-        function sendMessage() {
-        var message = $('#user-input').val();
-        if (message.trim() === '') return;
+    <script type="text/babel">
+        function ChatInterface() {
+            const [messages, setMessages] = React.useState([]);
+            const [inputMessage, setInputMessage] = React.useState('');
 
-        $('#chat-container').append('<p><strong>You:</strong> ' + message + '</p>');
-        $('#user-input').val('');
+            const sendMessage = async () => {
+                if (!inputMessage.trim()) return;
 
-        $.ajax({
-            url: '{% url "process_message" %}',
-            type: 'POST',
-            contentType: 'application/json',
-            data: JSON.stringify({
-                'message': message
-            }),
-            headers: {
-                'X-CSRFToken': '{{ csrf_token }}'
-            },
-            success: function(response) {
-                console.log("Received response:", response);  // Log the entire response
-                if (response && response.response) {
-                    $('#chat-container').append('<p><strong>AI:</strong> ' + response.response + '</p>');
-                } else {
-                    $('#chat-container').append('<p><strong>AI:</strong> Sorry, I couldn\'t generate a response.</p>');
+                const newMessages = [...messages, { type: 'user', content: inputMessage }];
+                setMessages(newMessages);
+                setInputMessage('');
+
+                try {
+                    const response = await fetch('/process_message/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+                        },
+                        body: JSON.stringify({ message: inputMessage })
+                    });
+                    
+                    const data = await response.json();
+                    if (data && data.response) {
+                        setMessages([...newMessages, { type: 'ai', content: data.response }]);
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    setMessages([...newMessages, { type: 'error', content: 'Failed to get response' }]);
                 }
-                $('#chat-container').scrollTop($('#chat-container')[0].scrollHeight);
-            },
-            error: function(xhr, status, error) {
-                console.error("Error:", error);  // Log any errors
-                console.error("Response:", xhr.responseText);  // Log the response text for more details
-                $('#chat-container').append('<p><strong>Error:</strong> Failed to get response. Please try again.</p>');
-                $('#chat-container').scrollTop($('#chat-container')[0].scrollHeight);
-            }
-        });
+            };
+
+            return (
+                <div className="h-screen flex flex-col">
+                    <header className="bg-blue-600 p-4 text-white">
+                        <h1 className="text-xl font-bold">Investment Chat Analysis</h1>
+                    </header>
+                    
+                    <div className="flex-1 flex">
+                        {/* Left Panel - Chat */}
+                        <div className="w-1/2 p-4 flex flex-col">
+                            <div className="flex-1 border rounded-lg p-4 overflow-y-auto mb-4">
+                                {messages.map((msg, index) => (
+                                    <div key={index} className="mb-2">
+                                        <strong className={msg.type === 'user' ? 'text-blue-600' : 'text-green-600'}>
+                                            {msg.type === 'user' ? 'You: ' : 'AI: '}
+                                        </strong>
+                                        <span>{msg.content}</span>
+                                    </div>
+                                ))}
+                            </div>
+                            
+                            <div className="flex gap-2">
+                                <input
+                                    type="text"
+                                    value={inputMessage}
+                                    onChange={(e) => setInputMessage(e.target.value)}
+                                    onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
+                                    className="flex-1 p-2 border rounded"
+                                    placeholder="Type your message..."
+                                />
+                                <button
+                                    onClick={sendMessage}
+                                    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                                >
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Right Panel - Future Dashboard */}
+                        <div className="w-1/2 p-4">
+                            <div className="h-full border rounded-lg p-4 flex items-center justify-center text-gray-500">
+                                Future visualization space
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
         }
 
-        $('#user-input').keypress(function(e) {
-            if(e.which == 13) {
-                sendMessage();
-            }
-        });
+        ReactDOM.render(<ChatInterface />, document.getElementById('root'));
     </script>
 </body>
 </html>
