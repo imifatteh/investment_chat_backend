@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Chat</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #chat-container {
+            width: 500px;
+            height: 400px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Investment Chat</h1>
+    <div id="chat-container"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        function sendMessage() {
+        var message = $('#user-input').val();
+        if (message.trim() === '') return;
+
+        $('#chat-container').append('<p><strong>You:</strong> ' + message + '</p>');
+        $('#user-input').val('');
+
+        $.ajax({
+            url: '{% url "process_message" %}',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'message': message
+            }),
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}'
+            },
+            success: function(response) {
+                console.log("Received response:", response);  // Log the entire response
+                if (response && response.response) {
+                    $('#chat-container').append('<p><strong>AI:</strong> ' + response.response + '</p>');
+                } else {
+                    $('#chat-container').append('<p><strong>AI:</strong> Sorry, I couldn\'t generate a response.</p>');
+                }
+                $('#chat-container').scrollTop($('#chat-container')[0].scrollHeight);
+            },
+            error: function(xhr, status, error) {
+                console.error("Error:", error);  // Log any errors
+                console.error("Response:", xhr.responseText);  // Log the response text for more details
+                $('#chat-container').append('<p><strong>Error:</strong> Failed to get response. Please try again.</p>');
+                $('#chat-container').scrollTop($('#chat-container')[0].scrollHeight);
+            }
+        });
+        }
+
+        $('#user-input').keypress(function(e) {
+            if(e.which == 13) {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>
