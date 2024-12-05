@@ -1,0 +1,1 @@
+web: gunicorn investment_chat_project.wsgi --log-file -
