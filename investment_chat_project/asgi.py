@@ -1,16 +1,26 @@
-"""
-ASGI config for investment_chat_project project.
-
-It exposes the ASGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/4.2/howto/deployment/asgi/
-"""
-
 import os
-
+import threading
 from django.core.asgi import get_asgi_application
+from django.conf import settings
+from channels.routing import ProtocolTypeRouter, URLRouter
+from channels.auth import AuthMiddlewareStack
+from polygon_ai.polygon_websocket import PolygonWebSocketService
+from polygon_ai.routing import websocket_urlpatterns
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'investment_chat_project.settings')
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "investment_chat_project.settings")
 
-application = get_asgi_application()
+application = ProtocolTypeRouter(
+    {
+        "http": get_asgi_application(),
+        "websocket": AuthMiddlewareStack(URLRouter(websocket_urlpatterns)),
+    }
+)
+
+
+# Start the WebSocket service in a separate thread
+def start_polygon_ws():
+    service = PolygonWebSocketService()
+    service.start(tickers=["AAPL", "TSLA", "MSFT"])
+
+
+threading.Thread(target=start_polygon_ws, daemon=True).start()
