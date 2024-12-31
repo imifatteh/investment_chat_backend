@@ -57,7 +57,7 @@ function Chart() {
                                 method: 'GET',
                                 headers: {
                                     'Content-Type': 'application/json',
-                                    Authorization: `Bearer ${newTokens.access}`,
+                                    Authorization: `Bearer ${newTokens.access_token}`,
                                 },
                             }
                         );
