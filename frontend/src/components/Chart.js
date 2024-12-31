@@ -6,32 +6,90 @@ function Chart() {
     const [data, setData] = useState([]);
     const [searchTicker, setSearchTicker] = useState('');
     const [selectedTicker, setSelectedTicker] = useState('DJIA');
-    const [timePeriod, setTimePeriod] = useState('1M'); // Default to 1D
+    const [timePeriod, setTimePeriod] = useState('1M'); // Default to 1 Month
     const API_URL = process.env.REACT_APP_API_URL;
 
-    // Fetch data whenever the selected ticker or time period changes
+    // Fetch stock data with authentication
     useEffect(() => {
         if (!selectedTicker) return;
 
-        // Log to check what time period is being passed
-        console.log(
-            `Fetching data for ticker: ${selectedTicker} with time period: ${timePeriod}`
-        );
+        const fetchData = async () => {
+            const token = localStorage.getItem('access_token'); // Fetch token from localStorage
 
-        fetch(
-            `${API_URL}/api/aggs_data/${selectedTicker}/?time_range=${timePeriod}`
-        )
-            .then((response) => response.json())
-            .then((responseData) => {
-                const stockData = responseData.data || [];
-                console.log('Data fetched:', stockData); // Log the fetched data
-                setData(stockData);
-            })
-            .catch((error) => {
-                console.error('Error fetching data:', error);
-            });
-    }, [API_URL, selectedTicker, timePeriod]); // Add timePeriod to the dependency array
+            try {
+                let response = await fetch(
+                    `${API_URL}/api/aggs_data/${selectedTicker}/?time_range=${timePeriod}`,
+                    {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            Authorization: `Bearer ${token}`,
+                        },
+                    }
+                );
 
+                if (response.status === 401) {
+                    // Handle token expiration: attempt to refresh
+                    const refreshToken = localStorage.getItem('refresh_token');
+                    const refreshResponse = await fetch(
+                        `${API_URL}/api/token/refresh/`,
+                        {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({ refresh: refreshToken }),
+                        }
+                    );
+
+                    if (refreshResponse.ok) {
+                        const newTokens = await refreshResponse.json();
+                        localStorage.setItem('access_token', newTokens.access);
+                        localStorage.setItem(
+                            'refresh_token',
+                            newTokens.refresh
+                        );
+
+                        // Retry original request with new token
+                        response = await fetch(
+                            `${API_URL}/api/aggs_data/${selectedTicker}/?time_range=${timePeriod}`,
+                            {
+                                method: 'GET',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    Authorization: `Bearer ${newTokens.access}`,
+                                },
+                            }
+                        );
+                    } else {
+                        throw new Error(
+                            'Session expired. Please log in again.'
+                        );
+                    }
+                }
+
+                if (response.status === 403) {
+                    throw new Error(
+                        'Access denied. Please check your permissions.'
+                    );
+                }
+
+                const responseData = await response.json();
+                setData(responseData.data || []);
+            } catch (error) {
+                console.error('Error fetching data:', error.message);
+                if (error.message.includes('Session expired')) {
+                    alert(error.message);
+                    localStorage.clear();
+                    window.location.href = '/login'; // Redirect to login page
+                }
+            }
+        };
+
+        fetchData();
+    }, [API_URL, selectedTicker, timePeriod]);
+
+    // Render chart using D3
     useEffect(() => {
         if (data.length === 0) return;
 

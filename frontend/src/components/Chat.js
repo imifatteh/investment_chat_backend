@@ -21,9 +21,6 @@ function Chat() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    // 'X-CSRFToken': document.querySelector(
-                    //     '[name=csrfmiddlewaretoken]'
-                    // ).value,
                 },
                 body: JSON.stringify({ message: inputMessage }),
             });
@@ -46,12 +43,6 @@ function Chat() {
     return (
         <>
             <div className='h-screen flex flex-col'>
-                <header className='bg-blue-600 p-4 text-white'>
-                    <h1 className='text-xl font-bold'>
-                        Investment Chat Analysis
-                    </h1>
-                </header>
-
                 <div className='flex-1 flex'>
                     {/* Left Panel - Chat */}
                     <div className='w-1/2 p-4 flex flex-col'>
