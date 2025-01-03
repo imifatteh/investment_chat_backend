@@ -7,7 +7,7 @@ from polygon_ai.utils import get_aggs_data
 
 
 @api_view(["GET"])
-@permission_classes([AllowAny])
+@permission_classes([IsAuthenticated])
 def aggs_data_view(request, ticker: str):
     if request.method == "GET":
         time_range = request.GET.get("time_range")

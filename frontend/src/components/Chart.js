@@ -14,7 +14,7 @@ function Chart() {
         if (!selectedTicker) return;
 
         const fetchData = async () => {
-            const token = localStorage.getItem('access_token'); // Fetch token from localStorage
+            const token = localStorage.getItem('accessToken'); // Fetch token from localStorage
 
             try {
                 let response = await fetch(
@@ -44,7 +44,7 @@ function Chart() {
 
                     if (refreshResponse.ok) {
                         const newTokens = await refreshResponse.json();
-                        localStorage.setItem('access_token', newTokens.access);
+                        localStorage.setItem('accessToken', newTokens.access);
                         localStorage.setItem(
                             'refresh_token',
                             newTokens.refresh
