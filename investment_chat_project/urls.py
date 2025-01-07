@@ -16,7 +16,8 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import include, path
+
 from investment_chat_app import views
 
 urlpatterns = [
@@ -24,4 +25,5 @@ urlpatterns = [
     path("", views.home, name="home"),
     path("process_message/", views.process_message, name="process_message"),
     path("api/", include("polygon_ai.urls")),
+    path("api/auth/", include("signup.urls")),
 ]
