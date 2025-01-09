@@ -1,0 +1,68 @@
+# Ignore Python cache files
+
+**pycache**/
+_.pyc
+_.pyo
+
+# Ignore virtual environment
+
+venv/
+env/
+
+# Ignore local development tools
+
+_.sqlite3
+_.log
+_.env
+_.local
+coverage/
+htmlcov/
+pytest_cache/
+\*.pid
+
+# Ignore personal or sensitive files
+
+secrets.json
+\*.pem
+
+# Ignore test directories
+
+tests/
+test\_\*.py
+
+# Ignore static and media files (if using an external storage service)
+
+staticfiles/
+media/
+
+# Ignore documentation files
+
+_.md
+_.rst
+docs/
+
+# Ignore node modules (if applicable)
+
+node_modules/
+package-lock.json
+
+# Ignore any large datasets or backups
+
+_.tar.gz
+_.zip
+\*.bak
+
+# Ignore IDE and editor configurations
+
+.idea/
+.vscode/
+_.sublime-project
+_.sublime-workspace
+
+# Ignore Git metadata
+
+.git/
+
+# Ignore frontend
+
+frontend/
