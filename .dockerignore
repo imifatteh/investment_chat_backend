@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.env
+node_modules/
+staticfiles/
+media/
+env/
