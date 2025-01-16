@@ -64,4 +64,5 @@ COPY . .
 
 EXPOSE $PORT
 
-CMD gunicorn investment_chat_project.wsgi:application --bind 0.0.0.0:$PORT
+# Run migrations and start the application
+CMD ["bash", "-c", "python manage.py migrate --noinput && exec gunicorn investment_chat_project.wsgi:application --bind 0.0.0.0:$PORT"]

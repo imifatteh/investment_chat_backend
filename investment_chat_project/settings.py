@@ -33,7 +33,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-CORS_ORIGIN_WHITELIST = ("http://localhost:3000",)
+CORS_ORIGIN_WHITELIST = (
+    "http://localhost:3000",
+    "https://investment-chat-app-4c811a68d7fc.herokuapp.com",
+)
 
 # Application definition
 
@@ -111,13 +114,11 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # Check environment variable for DATABASE_URL
-ENVIRONMENT = os.environ.get("ENVIRONMENT", default="local")
+ENVIRONMENT = os.environ.get("ENVIRONMENT")
+print(f"ENVIRONMENT: {ENVIRONMENT}")
 
-if ENVIRONMENT == "staging":
-    DATABASES = {
-        "default": dj_database_url.config(default=os.environ.get("DATABASE_URL"))
-    }
-else:
+if ENVIRONMENT == "local":
+    print("Using local database")
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
@@ -128,6 +129,27 @@ else:
             "PORT": os.environ.get("DB_PORT"),
         }
     }
+else:
+    DATABASES = {
+        "default": dj_database_url.config(default=os.environ.get("DATABASE_URL"))
+    }
+
+# if ENVIRONMENT == "staging":
+#     DATABASES = {
+#         "default": dj_database_url.config(default=os.environ.get("DATABASE_URL"))
+#     }
+# else:
+#     print("Using local database")
+#     DATABASES = {
+#         "default": {
+#             "ENGINE": "django.db.backends.postgresql",
+#             "NAME": os.environ.get("DB_NAME"),
+#             "USER": os.environ.get("DB_USER"),
+#             "PASSWORD": os.environ.get("DB_PASSWORD"),
+#             "HOST": os.environ.get("DB_HOST"),
+#             "PORT": os.environ.get("DB_PORT"),
+#         }
+#     }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

@@ -11390,3 +11390,668 @@ You should either call `.is_valid()` first, or access `.initial_data` instead.
 2025-01-16 11:37:42,907 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
 2025-01-16 11:37:42,907 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
 2025-01-16 11:37:47,780 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 14:02:15,674 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 14:02:18,036 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 14:02:20,907 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 14:02:20,908 - INFO - Starting initial document check and verification...
+2025-01-16 14:02:21,282 - INFO - No new or modified files to process
+2025-01-16 14:02:21,394 - INFO - Found 11 unique documents in collection
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 14:02:21,395 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 14:02:21,395 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 14:02:21,395 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 14:02:21,395 - INFO - === Document Loading Verification ===
+2025-01-16 14:02:21,395 - INFO - Total unique documents in collection: 11
+2025-01-16 14:02:21,395 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 14:02:21,395 - INFO -   Pages: 94
+2025-01-16 14:02:21,395 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 14:02:21,396 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 85
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 14:02:21,396 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 80
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 14:02:21,396 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 130
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 14:02:21,396 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 88
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 14:02:21,396 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 114
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 14:02:21,396 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 169
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 14:02:21,396 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 100
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 14:02:21,396 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 171
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 14:02:21,396 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 76
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 14:02:21,396 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 14:02:21,396 - INFO -   Pages: 113
+2025-01-16 14:02:21,396 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 14:02:21,396 - INFO - === End Verification ===
+2025-01-16 14:02:21,396 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 14:02:48,679 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 14:02:50,570 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 14:02:54,701 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 14:02:54,701 - INFO - Starting initial document check and verification...
+2025-01-16 14:02:55,080 - INFO - No new or modified files to process
+2025-01-16 14:02:55,190 - INFO - Found 11 unique documents in collection
+2025-01-16 14:02:55,190 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 14:02:55,190 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 14:02:55,190 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 14:02:55,190 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 14:02:55,191 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 14:02:55,191 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 14:02:55,191 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 14:02:55,191 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 14:02:55,191 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 14:02:55,191 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 14:02:55,191 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 14:02:55,191 - INFO - === Document Loading Verification ===
+2025-01-16 14:02:55,191 - INFO - Total unique documents in collection: 11
+2025-01-16 14:02:55,191 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 14:02:55,191 - INFO -   Pages: 94
+2025-01-16 14:02:55,191 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 14:02:55,191 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 14:02:55,191 - INFO -   Pages: 85
+2025-01-16 14:02:55,191 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 14:02:55,191 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 80
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 14:02:55,192 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 130
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 14:02:55,192 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 88
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 14:02:55,192 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 114
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 14:02:55,192 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 169
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 14:02:55,192 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 100
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 14:02:55,192 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 171
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 14:02:55,192 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 76
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 14:02:55,192 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 14:02:55,192 - INFO -   Pages: 113
+2025-01-16 14:02:55,192 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 14:02:55,192 - INFO - === End Verification ===
+2025-01-16 14:02:55,192 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 14:03:23,760 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 14:03:25,235 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 14:03:29,154 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 14:03:29,154 - INFO - Starting initial document check and verification...
+2025-01-16 14:03:29,520 - INFO - No new or modified files to process
+2025-01-16 14:03:29,632 - INFO - Found 11 unique documents in collection
+2025-01-16 14:03:29,632 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 14:03:29,632 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 14:03:29,632 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 14:03:29,633 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 14:03:29,633 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 14:03:29,633 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 14:03:29,633 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 14:03:29,633 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 14:03:29,633 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 14:03:29,633 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 14:03:29,633 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 14:03:29,633 - INFO - === Document Loading Verification ===
+2025-01-16 14:03:29,633 - INFO - Total unique documents in collection: 11
+2025-01-16 14:03:29,633 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 14:03:29,633 - INFO -   Pages: 94
+2025-01-16 14:03:29,633 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 14:03:29,633 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 14:03:29,633 - INFO -   Pages: 85
+2025-01-16 14:03:29,633 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 14:03:29,633 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 14:03:29,633 - INFO -   Pages: 80
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 14:03:29,634 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 14:03:29,634 - INFO -   Pages: 130
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 14:03:29,634 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 14:03:29,634 - INFO -   Pages: 88
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 14:03:29,634 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 14:03:29,634 - INFO -   Pages: 114
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 14:03:29,634 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 14:03:29,634 - INFO -   Pages: 169
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 14:03:29,634 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 14:03:29,634 - INFO -   Pages: 100
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 14:03:29,634 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 14:03:29,634 - INFO -   Pages: 171
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 14:03:29,634 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 14:03:29,634 - INFO -   Pages: 76
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 14:03:29,634 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 14:03:29,634 - INFO -   Pages: 113
+2025-01-16 14:03:29,634 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 14:03:29,634 - INFO - === End Verification ===
+2025-01-16 14:03:29,634 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 14:04:15,477 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 14:04:16,929 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 14:04:20,103 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 14:04:20,104 - INFO - Starting initial document check and verification...
+2025-01-16 14:04:20,472 - INFO - No new or modified files to process
+2025-01-16 14:04:20,583 - INFO - Found 11 unique documents in collection
+2025-01-16 14:04:20,583 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 14:04:20,583 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 14:04:20,583 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 14:04:20,583 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 14:04:20,583 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 14:04:20,583 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 14:04:20,583 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 14:04:20,583 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 14:04:20,583 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 14:04:20,583 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 14:04:20,583 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 14:04:20,584 - INFO - === Document Loading Verification ===
+2025-01-16 14:04:20,584 - INFO - Total unique documents in collection: 11
+2025-01-16 14:04:20,584 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 94
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 14:04:20,584 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 85
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 14:04:20,584 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 80
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 14:04:20,584 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 130
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 14:04:20,584 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 88
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 14:04:20,584 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 114
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 14:04:20,584 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 169
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 14:04:20,584 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 100
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 14:04:20,584 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 171
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 14:04:20,584 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 14:04:20,584 - INFO -   Pages: 76
+2025-01-16 14:04:20,584 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 14:04:20,584 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 14:04:20,585 - INFO -   Pages: 113
+2025-01-16 14:04:20,585 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 14:04:20,585 - INFO - === End Verification ===
+2025-01-16 14:04:20,585 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 14:04:52,904 - WARNING - Unauthorized: /api/auth/login/
+2025-01-16 14:04:54,404 - WARNING - Unauthorized: /api/auth/login/
+2025-01-16 14:04:57,521 - WARNING - Unauthorized: /api/auth/login/
+2025-01-16 15:08:18,802 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:08:25,081 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:08:28,037 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 15:08:28,037 - INFO - Starting initial document check and verification...
+2025-01-16 15:08:28,420 - INFO - No new or modified files to process
+2025-01-16 15:08:28,551 - INFO - Found 11 unique documents in collection
+2025-01-16 15:08:28,551 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 15:08:28,551 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 15:08:28,551 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 15:08:28,551 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 15:08:28,551 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 15:08:28,551 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 15:08:28,551 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 15:08:28,551 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 15:08:28,552 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 15:08:28,552 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 15:08:28,552 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 15:08:28,552 - INFO - === Document Loading Verification ===
+2025-01-16 15:08:28,552 - INFO - Total unique documents in collection: 11
+2025-01-16 15:08:28,552 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 15:08:28,552 - INFO -   Pages: 94
+2025-01-16 15:08:28,552 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 15:08:28,552 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 15:08:28,552 - INFO -   Pages: 85
+2025-01-16 15:08:28,552 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 15:08:28,552 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 15:08:28,552 - INFO -   Pages: 80
+2025-01-16 15:08:28,552 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 15:08:28,553 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 15:08:28,553 - INFO -   Pages: 130
+2025-01-16 15:08:28,553 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 15:08:28,553 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 15:08:28,553 - INFO -   Pages: 88
+2025-01-16 15:08:28,553 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 15:08:28,553 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 15:08:28,553 - INFO -   Pages: 114
+2025-01-16 15:08:28,553 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 15:08:28,553 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 15:08:28,553 - INFO -   Pages: 169
+2025-01-16 15:08:28,553 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 15:08:28,553 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 15:08:28,553 - INFO -   Pages: 100
+2025-01-16 15:08:28,553 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 15:08:28,553 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 15:08:28,553 - INFO -   Pages: 171
+2025-01-16 15:08:28,553 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 15:08:28,553 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 15:08:28,553 - INFO -   Pages: 76
+2025-01-16 15:08:28,553 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 15:08:28,553 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 15:08:28,553 - INFO -   Pages: 113
+2025-01-16 15:08:28,553 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 15:08:28,553 - INFO - === End Verification ===
+2025-01-16 15:08:28,553 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 15:08:47,058 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 15:08:49,097 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:08:50,608 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:08:54,241 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 15:08:54,242 - INFO - Starting initial document check and verification...
+2025-01-16 15:08:54,643 - INFO - No new or modified files to process
+2025-01-16 15:08:54,764 - INFO - Found 11 unique documents in collection
+2025-01-16 15:08:54,764 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 15:08:54,764 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 15:08:54,764 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 15:08:54,764 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 15:08:54,764 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 15:08:54,764 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 15:08:54,764 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 15:08:54,764 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 15:08:54,764 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 15:08:54,764 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 15:08:54,764 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 15:08:54,765 - INFO - === Document Loading Verification ===
+2025-01-16 15:08:54,765 - INFO - Total unique documents in collection: 11
+2025-01-16 15:08:54,765 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 15:08:54,765 - INFO -   Pages: 94
+2025-01-16 15:08:54,765 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 15:08:54,765 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 15:08:54,765 - INFO -   Pages: 85
+2025-01-16 15:08:54,765 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 15:08:54,765 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 15:08:54,765 - INFO -   Pages: 80
+2025-01-16 15:08:54,765 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 15:08:54,765 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 15:08:54,765 - INFO -   Pages: 130
+2025-01-16 15:08:54,765 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 15:08:54,765 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 15:08:54,765 - INFO -   Pages: 88
+2025-01-16 15:08:54,765 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 15:08:54,765 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 15:08:54,765 - INFO -   Pages: 114
+2025-01-16 15:08:54,765 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 15:08:54,765 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 15:08:54,765 - INFO -   Pages: 169
+2025-01-16 15:08:54,765 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 15:08:54,766 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 15:08:54,766 - INFO -   Pages: 100
+2025-01-16 15:08:54,766 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 15:08:54,766 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 15:08:54,766 - INFO -   Pages: 171
+2025-01-16 15:08:54,766 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 15:08:54,766 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 15:08:54,766 - INFO -   Pages: 76
+2025-01-16 15:08:54,766 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 15:08:54,766 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 15:08:54,766 - INFO -   Pages: 113
+2025-01-16 15:08:54,766 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 15:08:54,766 - INFO - === End Verification ===
+2025-01-16 15:08:54,766 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 15:09:08,369 - WARNING - Unauthorized: /api/aggs_data/AAPL/
+2025-01-16 15:09:18,771 - WARNING - Unauthorized: /api/auth/login/
+2025-01-16 15:09:59,075 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 15:10:01,228 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:10:03,251 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:10:07,233 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 15:10:07,234 - INFO - Starting initial document check and verification...
+2025-01-16 15:10:07,623 - INFO - No new or modified files to process
+2025-01-16 15:10:07,745 - INFO - Found 11 unique documents in collection
+2025-01-16 15:10:07,745 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 15:10:07,746 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 15:10:07,746 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 15:10:07,746 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 15:10:07,746 - INFO - === Document Loading Verification ===
+2025-01-16 15:10:07,746 - INFO - Total unique documents in collection: 11
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 15:10:07,746 - INFO -   Pages: 94
+2025-01-16 15:10:07,746 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 15:10:07,746 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 85
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 15:10:07,747 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 80
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 15:10:07,747 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 130
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 15:10:07,747 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 88
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 15:10:07,747 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 114
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 15:10:07,747 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 169
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 15:10:07,747 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 100
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 15:10:07,747 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 171
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 15:10:07,747 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 76
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 15:10:07,747 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 15:10:07,747 - INFO -   Pages: 113
+2025-01-16 15:10:07,747 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 15:10:07,747 - INFO - === End Verification ===
+2025-01-16 15:10:07,747 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 15:10:44,813 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 15:10:47,107 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:10:49,070 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:10:52,486 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 15:10:52,487 - INFO - Starting initial document check and verification...
+2025-01-16 15:10:52,871 - INFO - No new or modified files to process
+2025-01-16 15:10:52,997 - INFO - Found 11 unique documents in collection
+2025-01-16 15:10:52,997 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 15:10:52,997 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 15:10:52,997 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 15:10:52,997 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 15:10:52,997 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 15:10:52,997 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 15:10:52,997 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 15:10:52,997 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 15:10:52,997 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 15:10:52,997 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 15:10:52,997 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 15:10:52,998 - INFO - === Document Loading Verification ===
+2025-01-16 15:10:52,998 - INFO - Total unique documents in collection: 11
+2025-01-16 15:10:52,998 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 15:10:52,998 - INFO -   Pages: 94
+2025-01-16 15:10:52,998 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 15:10:52,998 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 15:10:52,998 - INFO -   Pages: 85
+2025-01-16 15:10:52,998 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 15:10:52,998 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 15:10:52,998 - INFO -   Pages: 80
+2025-01-16 15:10:52,998 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 15:10:52,998 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 15:10:52,998 - INFO -   Pages: 130
+2025-01-16 15:10:52,998 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 15:10:52,998 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 15:10:52,998 - INFO -   Pages: 88
+2025-01-16 15:10:52,998 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 15:10:52,998 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 15:10:52,999 - INFO -   Pages: 114
+2025-01-16 15:10:52,999 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 15:10:52,999 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 15:10:52,999 - INFO -   Pages: 169
+2025-01-16 15:10:52,999 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 15:10:52,999 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 15:10:52,999 - INFO -   Pages: 100
+2025-01-16 15:10:52,999 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 15:10:52,999 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 15:10:52,999 - INFO -   Pages: 171
+2025-01-16 15:10:52,999 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 15:10:52,999 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 15:10:52,999 - INFO -   Pages: 76
+2025-01-16 15:10:52,999 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 15:10:52,999 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 15:10:52,999 - INFO -   Pages: 113
+2025-01-16 15:10:52,999 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 15:10:52,999 - INFO - === End Verification ===
+2025-01-16 15:10:52,999 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 15:15:00,529 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:15:02,504 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:15:05,629 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 15:15:05,630 - INFO - Starting initial document check and verification...
+2025-01-16 15:15:06,005 - INFO - No new or modified files to process
+2025-01-16 15:15:06,117 - INFO - Found 11 unique documents in collection
+2025-01-16 15:15:06,117 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 15:15:06,117 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 15:15:06,117 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 15:15:06,117 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 15:15:06,117 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 15:15:06,117 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 15:15:06,117 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 15:15:06,117 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 15:15:06,117 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 15:15:06,117 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 15:15:06,117 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 15:15:06,118 - INFO - === Document Loading Verification ===
+2025-01-16 15:15:06,118 - INFO - Total unique documents in collection: 11
+2025-01-16 15:15:06,118 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 15:15:06,118 - INFO -   Pages: 94
+2025-01-16 15:15:06,118 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 15:15:06,118 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 15:15:06,118 - INFO -   Pages: 85
+2025-01-16 15:15:06,118 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 15:15:06,118 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 15:15:06,118 - INFO -   Pages: 80
+2025-01-16 15:15:06,118 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 15:15:06,118 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 15:15:06,118 - INFO -   Pages: 130
+2025-01-16 15:15:06,118 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 15:15:06,118 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 15:15:06,118 - INFO -   Pages: 88
+2025-01-16 15:15:06,118 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 15:15:06,119 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 15:15:06,119 - INFO -   Pages: 114
+2025-01-16 15:15:06,119 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 15:15:06,119 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 15:15:06,119 - INFO -   Pages: 169
+2025-01-16 15:15:06,119 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 15:15:06,119 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 15:15:06,119 - INFO -   Pages: 100
+2025-01-16 15:15:06,119 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 15:15:06,119 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 15:15:06,119 - INFO -   Pages: 171
+2025-01-16 15:15:06,119 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 15:15:06,119 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 15:15:06,119 - INFO -   Pages: 76
+2025-01-16 15:15:06,119 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 15:15:06,119 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 15:15:06,119 - INFO -   Pages: 113
+2025-01-16 15:15:06,119 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 15:15:06,119 - INFO - === End Verification ===
+2025-01-16 15:15:06,119 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 15:15:16,444 - WARNING - Unauthorized: /api/auth/login/
+2025-01-16 15:17:15,982 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 15:17:18,538 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:17:20,798 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:17:24,632 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 15:17:24,633 - INFO - Starting initial document check and verification...
+2025-01-16 15:17:25,022 - INFO - No new or modified files to process
+2025-01-16 15:17:25,173 - INFO - Found 11 unique documents in collection
+2025-01-16 15:17:25,173 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 15:17:25,173 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 15:17:25,173 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 15:17:25,173 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 15:17:25,173 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 15:17:25,173 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 15:17:25,173 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 15:17:25,173 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 15:17:25,173 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 15:17:25,173 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 15:17:25,173 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 15:17:25,174 - INFO - === Document Loading Verification ===
+2025-01-16 15:17:25,174 - INFO - Total unique documents in collection: 11
+2025-01-16 15:17:25,174 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 15:17:25,174 - INFO -   Pages: 94
+2025-01-16 15:17:25,174 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 15:17:25,174 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 15:17:25,174 - INFO -   Pages: 85
+2025-01-16 15:17:25,174 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 15:17:25,174 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 15:17:25,174 - INFO -   Pages: 80
+2025-01-16 15:17:25,174 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 15:17:25,174 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 15:17:25,174 - INFO -   Pages: 130
+2025-01-16 15:17:25,174 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 15:17:25,174 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 15:17:25,174 - INFO -   Pages: 88
+2025-01-16 15:17:25,174 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 15:17:25,174 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 15:17:25,174 - INFO -   Pages: 114
+2025-01-16 15:17:25,175 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 15:17:25,175 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 15:17:25,175 - INFO -   Pages: 169
+2025-01-16 15:17:25,175 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 15:17:25,175 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 15:17:25,175 - INFO -   Pages: 100
+2025-01-16 15:17:25,175 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 15:17:25,175 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 15:17:25,175 - INFO -   Pages: 171
+2025-01-16 15:17:25,175 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 15:17:25,175 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 15:17:25,175 - INFO -   Pages: 76
+2025-01-16 15:17:25,175 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 15:17:25,175 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 15:17:25,175 - INFO -   Pages: 113
+2025-01-16 15:17:25,175 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 15:17:25,175 - INFO - === End Verification ===
+2025-01-16 15:17:25,175 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 15:17:47,077 - WARNING - Unauthorized: /api/auth/login/
+2025-01-16 15:18:27,100 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 15:18:29,169 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:18:31,363 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:18:34,025 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 15:18:34,026 - INFO - Starting initial document check and verification...
+2025-01-16 15:18:34,426 - INFO - No new or modified files to process
+2025-01-16 15:18:34,562 - INFO - Found 11 unique documents in collection
+2025-01-16 15:18:34,562 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 15:18:34,562 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 15:18:34,562 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 15:18:34,562 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 15:18:34,562 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 15:18:34,563 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 15:18:34,563 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 15:18:34,563 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 15:18:34,563 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 15:18:34,563 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 15:18:34,563 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 15:18:34,563 - INFO - === Document Loading Verification ===
+2025-01-16 15:18:34,563 - INFO - Total unique documents in collection: 11
+2025-01-16 15:18:34,563 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 15:18:34,563 - INFO -   Pages: 94
+2025-01-16 15:18:34,563 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 15:18:34,563 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 15:18:34,563 - INFO -   Pages: 85
+2025-01-16 15:18:34,563 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 15:18:34,563 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 80
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 15:18:34,564 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 130
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 15:18:34,564 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 88
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 15:18:34,564 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 114
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 15:18:34,564 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 169
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 15:18:34,564 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 100
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 15:18:34,564 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 171
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 15:18:34,564 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 76
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 15:18:34,564 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 15:18:34,564 - INFO -   Pages: 113
+2025-01-16 15:18:34,564 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 15:18:34,564 - INFO - === End Verification ===
+2025-01-16 15:18:34,564 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 15:18:38,687 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 15:18:41,097 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:18:43,123 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:18:43,694 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:18:48,581 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 15:18:49,992 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 15:18:53,200 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 15:18:53,224 - INFO - Starting initial document check and verification...
+2025-01-16 15:18:53,655 - INFO - No new or modified files to process
+2025-01-16 15:18:53,778 - INFO - Found 11 unique documents in collection
+2025-01-16 15:18:53,778 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 15:18:53,778 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 15:18:53,778 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 15:18:53,778 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 15:18:53,778 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 15:18:53,779 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 15:18:53,779 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 15:18:53,779 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 15:18:53,779 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 15:18:53,779 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 15:18:53,779 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 15:18:53,779 - INFO - === Document Loading Verification ===
+2025-01-16 15:18:53,780 - INFO - Total unique documents in collection: 11
+2025-01-16 15:18:53,780 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 94
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 15:18:53,780 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 85
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 15:18:53,780 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 80
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 15:18:53,780 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 130
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 15:18:53,780 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 88
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 15:18:53,780 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 114
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 15:18:53,780 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 169
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 15:18:53,780 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 100
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 15:18:53,780 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 171
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 15:18:53,780 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 76
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 15:18:53,780 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 15:18:53,780 - INFO -   Pages: 113
+2025-01-16 15:18:53,780 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 15:18:53,780 - INFO - === End Verification ===
+2025-01-16 15:18:53,780 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 15:19:20,630 - WARNING - Unauthorized: /api/auth/login/
