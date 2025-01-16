@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    command: gunicorn investment_chat_project.wsgi:application --bind 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    environment:
+      DJANGO_SETTINGS_MODULE: investment_chat_project.settings
+      DATABASE_URL: ${DATABASE_URL}
+      DEBUG: "False"
