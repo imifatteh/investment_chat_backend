@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ["*"]
 
 CORS_ORIGIN_WHITELIST = (
     "http://localhost:3000",
-    "https://investment-chat-app-4c811a68d7fc.herokuapp.com",
+    "https://investment-chat-frontend-1a923073d0d8.herokuapp.com",
 )
 
 # Application definition

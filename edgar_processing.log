@@ -12276,3 +12276,946 @@ You should either call `.is_valid()` first, or access `.initial_data` instead.
 2025-01-16 15:50:44,768 - INFO -   Processed: 2024-10-24T18:52:06.115036
 2025-01-16 15:50:44,768 - INFO - === End Verification ===
 2025-01-16 15:50:44,768 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 16:31:42,338 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 16:31:45,182 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 16:31:49,873 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 16:31:49,874 - INFO - Starting initial document check and verification...
+2025-01-16 16:31:50,284 - INFO - No new or modified files to process
+2025-01-16 16:31:50,429 - INFO - Found 11 unique documents in collection
+2025-01-16 16:31:50,429 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 16:31:50,429 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 16:31:50,429 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 16:31:50,429 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 16:31:50,430 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 16:31:50,430 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 16:31:50,430 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 16:31:50,430 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 16:31:50,430 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 16:31:50,430 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 16:31:50,430 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 16:31:50,430 - INFO - === Document Loading Verification ===
+2025-01-16 16:31:50,430 - INFO - Total unique documents in collection: 11
+2025-01-16 16:31:50,430 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 16:31:50,430 - INFO -   Pages: 94
+2025-01-16 16:31:50,430 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 16:31:50,430 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 16:31:50,430 - INFO -   Pages: 85
+2025-01-16 16:31:50,430 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 16:31:50,430 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 16:31:50,430 - INFO -   Pages: 80
+2025-01-16 16:31:50,430 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 16:31:50,430 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 16:31:50,431 - INFO -   Pages: 130
+2025-01-16 16:31:50,431 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 16:31:50,431 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 16:31:50,431 - INFO -   Pages: 88
+2025-01-16 16:31:50,431 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 16:31:50,431 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 16:31:50,431 - INFO -   Pages: 114
+2025-01-16 16:31:50,431 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 16:31:50,431 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 16:31:50,431 - INFO -   Pages: 169
+2025-01-16 16:31:50,431 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 16:31:50,431 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 16:31:50,431 - INFO -   Pages: 100
+2025-01-16 16:31:50,431 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 16:31:50,431 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 16:31:50,431 - INFO -   Pages: 171
+2025-01-16 16:31:50,431 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 16:31:50,431 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 16:31:50,431 - INFO -   Pages: 76
+2025-01-16 16:31:50,431 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 16:31:50,431 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 16:31:50,431 - INFO -   Pages: 113
+2025-01-16 16:31:50,431 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 16:31:50,431 - INFO - === End Verification ===
+2025-01-16 16:31:50,431 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 16:32:01,840 - WARNING - Unauthorized: /api/aggs_data/DJIA/
+2025-01-16 16:32:01,842 - WARNING - Unauthorized: /api/aggs_data/DJIA/
+2025-01-16 16:32:01,923 - WARNING - Not Found: /api/token/refresh/
+2025-01-16 16:32:01,929 - WARNING - Not Found: /api/token/refresh/
+2025-01-16 16:32:16,033 - INFO - No new or modified files to process
+2025-01-16 16:32:17,177 - INFO - Found 11 unique documents in collection
+2025-01-16 16:32:17,177 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 16:32:17,177 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 16:32:17,177 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 16:32:17,177 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 16:32:17,177 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 16:32:17,177 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 16:32:17,177 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 16:32:17,177 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 16:32:17,177 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 16:32:17,177 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 16:32:17,177 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 16:32:19,455 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-16 16:48:07,726 - ERROR - Internal Server Error: /api/auth/forgot-password/
+Traceback (most recent call last):
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/signup/views.py", line 115, in post
+    send_mail(
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-21c2d3bc64dsm2375205ad.122 - gsmtp')
+2025-01-16 16:49:01,268 - ERROR - Internal Server Error: /api/auth/forgot-password/
+Traceback (most recent call last):
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/signup/views.py", line 115, in post
+    send_mail(
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-72dabacdffcsm218576b3a.176 - gsmtp')
+2025-01-16 16:52:07,052 - ERROR - Internal Server Error: /api/auth/forgot-password/
+Traceback (most recent call last):
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/signup/views.py", line 115, in post
+    send_mail(
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-21c2ceb9aeasm2556265ad.90 - gsmtp')
+2025-01-16 16:53:07,342 - ERROR - Internal Server Error: /api/auth/forgot-password/
+Traceback (most recent call last):
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/signup/views.py", line 115, in post
+    send_mail(
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2f72c14ffaasm3545128a91.4 - gsmtp')
+2025-01-16 16:53:40,129 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 16:53:43,159 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 16:53:45,110 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 16:53:49,086 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 16:53:49,087 - INFO - Starting initial document check and verification...
+2025-01-16 16:53:49,483 - INFO - No new or modified files to process
+2025-01-16 16:53:49,643 - INFO - Found 11 unique documents in collection
+2025-01-16 16:53:49,643 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 16:53:49,643 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 16:53:49,643 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 16:53:49,644 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 16:53:49,669 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 16:53:49,669 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 16:53:49,669 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 16:53:49,669 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 16:53:49,669 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 16:53:49,669 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 16:53:49,669 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 16:53:49,670 - INFO - === Document Loading Verification ===
+2025-01-16 16:53:49,670 - INFO - Total unique documents in collection: 11
+2025-01-16 16:53:49,670 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 94
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 16:53:49,670 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 85
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 16:53:49,670 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 80
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 16:53:49,670 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 130
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 16:53:49,670 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 88
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 16:53:49,670 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 114
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 16:53:49,670 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 169
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 16:53:49,670 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 100
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 16:53:49,670 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 171
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 16:53:49,670 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 76
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 16:53:49,670 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 16:53:49,670 - INFO -   Pages: 113
+2025-01-16 16:53:49,670 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 16:53:49,670 - INFO - === End Verification ===
+2025-01-16 16:53:49,670 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 16:54:12,885 - ERROR - Internal Server Error: /api/auth/forgot-password/
+Traceback (most recent call last):
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/signup/views.py", line 115, in post
+    send_mail(
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-21c2d4042desm2394865ad.242 - gsmtp')
+2025-01-16 16:54:39,835 - INFO - /Users/yawar/Desktop/investment_chat_backend/signup/views.py changed, reloading.
+2025-01-16 16:54:42,492 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 16:54:44,704 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 16:54:47,954 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 16:54:47,955 - INFO - Starting initial document check and verification...
+2025-01-16 16:54:48,365 - INFO - No new or modified files to process
+2025-01-16 16:54:48,502 - INFO - Found 11 unique documents in collection
+2025-01-16 16:54:48,502 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 16:54:48,502 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 16:54:48,502 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 16:54:48,502 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 16:54:48,502 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 16:54:48,502 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 16:54:48,502 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 16:54:48,502 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 16:54:48,502 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 16:54:48,502 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 16:54:48,502 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 16:54:48,503 - INFO - === Document Loading Verification ===
+2025-01-16 16:54:48,503 - INFO - Total unique documents in collection: 11
+2025-01-16 16:54:48,503 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 94
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 16:54:48,503 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 85
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 16:54:48,503 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 80
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 16:54:48,503 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 130
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 16:54:48,503 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 88
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 16:54:48,503 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 114
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 16:54:48,503 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 169
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 16:54:48,503 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 100
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 16:54:48,503 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 171
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 16:54:48,503 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 16:54:48,503 - INFO -   Pages: 76
+2025-01-16 16:54:48,503 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 16:54:48,504 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 16:54:48,504 - INFO -   Pages: 113
+2025-01-16 16:54:48,504 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 16:54:48,504 - INFO - === End Verification ===
+2025-01-16 16:54:48,504 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 16:54:57,292 - ERROR - Internal Server Error: /api/auth/forgot-password/
+Traceback (most recent call last):
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/signup/views.py", line 116, in post
+    send_mail(
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-21c2d42bbaesm2384575ad.256 - gsmtp')
+2025-01-16 16:55:54,441 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 16:55:56,714 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 16:55:59,083 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 16:56:03,326 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 16:56:03,326 - INFO - Starting initial document check and verification...
+2025-01-16 16:56:03,720 - INFO - No new or modified files to process
+2025-01-16 16:56:03,864 - INFO - Found 11 unique documents in collection
+2025-01-16 16:56:03,864 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 16:56:03,864 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 16:56:03,864 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 16:56:03,864 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 16:56:03,864 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 16:56:03,864 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 16:56:03,864 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 16:56:03,864 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 16:56:03,864 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 16:56:03,864 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 16:56:03,864 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 16:56:03,865 - INFO - === Document Loading Verification ===
+2025-01-16 16:56:03,865 - INFO - Total unique documents in collection: 11
+2025-01-16 16:56:03,865 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 94
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 16:56:03,865 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 85
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 16:56:03,865 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 80
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 16:56:03,865 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 130
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 16:56:03,865 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 88
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 16:56:03,865 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 114
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 16:56:03,865 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 169
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 16:56:03,865 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 100
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 16:56:03,865 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 171
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 16:56:03,865 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 76
+2025-01-16 16:56:03,865 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 16:56:03,865 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 16:56:03,865 - INFO -   Pages: 113
+2025-01-16 16:56:03,866 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 16:56:03,866 - INFO - === End Verification ===
+2025-01-16 16:56:03,866 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 16:57:53,217 - WARNING - Bad Request: /api/auth/forgot-password/
+2025-01-16 16:58:44,431 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 16:58:46,544 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 16:58:48,521 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 16:58:52,422 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 16:58:52,423 - INFO - Starting initial document check and verification...
+2025-01-16 16:58:52,815 - INFO - No new or modified files to process
+2025-01-16 16:58:52,940 - INFO - Found 11 unique documents in collection
+2025-01-16 16:58:52,940 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 16:58:52,940 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 16:58:52,940 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 16:58:52,940 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 16:58:52,940 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 16:58:52,940 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 16:58:52,940 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 16:58:52,940 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 16:58:52,940 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 16:58:52,940 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 16:58:52,940 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 16:58:52,941 - INFO - === Document Loading Verification ===
+2025-01-16 16:58:52,941 - INFO - Total unique documents in collection: 11
+2025-01-16 16:58:52,941 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 94
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 16:58:52,941 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 85
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 16:58:52,941 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 80
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 16:58:52,941 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 130
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 16:58:52,941 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 88
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 16:58:52,941 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 114
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 16:58:52,941 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 169
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 16:58:52,941 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 100
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 16:58:52,941 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 171
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 16:58:52,941 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 76
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 16:58:52,941 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 16:58:52,941 - INFO -   Pages: 113
+2025-01-16 16:58:52,941 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 16:58:52,941 - INFO - === End Verification ===
+2025-01-16 16:58:52,941 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 16:59:17,844 - ERROR - Internal Server Error: /api/auth/forgot-password/
+Traceback (most recent call last):
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/yawar/Desktop/investment_chat_backend/signup/views.py", line 116, in post
+    send_mail(
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+  File "/Users/yawar/Desktop/investment_chat_backend/env/lib/python3.10/site-packages/django/core/mail/backends/smtp.py", line 95, in open
+    self.connection.login(self.username, self.password)
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/Users/yawar/.pyenv/versions/3.10.12/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-a9bce3a6157sm285962a12.39 - gsmtp')
+2025-01-16 17:00:32,617 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 17:00:36,504 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 17:00:38,523 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 17:00:41,732 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 17:00:41,732 - INFO - Starting initial document check and verification...
+2025-01-16 17:00:42,178 - INFO - No new or modified files to process
+2025-01-16 17:00:42,303 - INFO - Found 11 unique documents in collection
+2025-01-16 17:00:42,303 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 17:00:42,303 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 17:00:42,303 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 17:00:42,303 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 17:00:42,303 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 17:00:42,303 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 17:00:42,303 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 17:00:42,303 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 17:00:42,303 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 17:00:42,303 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 17:00:42,303 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 17:00:42,304 - INFO - === Document Loading Verification ===
+2025-01-16 17:00:42,304 - INFO - Total unique documents in collection: 11
+2025-01-16 17:00:42,304 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 17:00:42,304 - INFO -   Pages: 94
+2025-01-16 17:00:42,304 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 17:00:42,304 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 17:00:42,304 - INFO -   Pages: 85
+2025-01-16 17:00:42,304 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 17:00:42,304 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 17:00:42,304 - INFO -   Pages: 80
+2025-01-16 17:00:42,304 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 17:00:42,304 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 17:00:42,304 - INFO -   Pages: 130
+2025-01-16 17:00:42,304 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 17:00:42,304 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 17:00:42,304 - INFO -   Pages: 88
+2025-01-16 17:00:42,304 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 17:00:42,304 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 17:00:42,304 - INFO -   Pages: 114
+2025-01-16 17:00:42,304 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 17:00:42,304 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 17:00:42,304 - INFO -   Pages: 169
+2025-01-16 17:00:42,305 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 17:00:42,305 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 17:00:42,305 - INFO -   Pages: 100
+2025-01-16 17:00:42,305 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 17:00:42,305 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 17:00:42,305 - INFO -   Pages: 171
+2025-01-16 17:00:42,305 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 17:00:42,305 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 17:00:42,305 - INFO -   Pages: 76
+2025-01-16 17:00:42,305 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 17:00:42,305 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 17:00:42,305 - INFO -   Pages: 113
+2025-01-16 17:00:42,305 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 17:00:42,305 - INFO - === End Verification ===
+2025-01-16 17:00:42,305 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 17:00:56,792 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 17:00:59,003 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 17:01:00,840 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 17:01:03,600 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 17:01:03,601 - INFO - Starting initial document check and verification...
+2025-01-16 17:01:04,081 - INFO - No new or modified files to process
+2025-01-16 17:01:04,213 - INFO - Found 11 unique documents in collection
+2025-01-16 17:01:04,213 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 17:01:04,213 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 17:01:04,213 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 17:01:04,213 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 17:01:04,213 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 17:01:04,213 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 17:01:04,213 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 17:01:04,213 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 17:01:04,213 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 17:01:04,213 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 17:01:04,213 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 17:01:04,214 - INFO - === Document Loading Verification ===
+2025-01-16 17:01:04,214 - INFO - Total unique documents in collection: 11
+2025-01-16 17:01:04,214 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 94
+2025-01-16 17:01:04,214 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 17:01:04,214 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 85
+2025-01-16 17:01:04,214 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 17:01:04,214 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 80
+2025-01-16 17:01:04,214 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 17:01:04,214 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 130
+2025-01-16 17:01:04,214 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 17:01:04,214 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 88
+2025-01-16 17:01:04,214 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 17:01:04,214 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 114
+2025-01-16 17:01:04,214 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 17:01:04,214 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 169
+2025-01-16 17:01:04,214 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 17:01:04,214 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 100
+2025-01-16 17:01:04,214 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 17:01:04,214 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 17:01:04,214 - INFO -   Pages: 171
+2025-01-16 17:01:04,215 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 17:01:04,215 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 17:01:04,215 - INFO -   Pages: 76
+2025-01-16 17:01:04,215 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 17:01:04,215 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 17:01:04,215 - INFO -   Pages: 113
+2025-01-16 17:01:04,215 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 17:01:04,215 - INFO - === End Verification ===
+2025-01-16 17:01:04,215 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 17:01:14,057 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 17:01:16,105 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 17:01:17,592 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 17:01:21,035 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 17:01:21,035 - INFO - Starting initial document check and verification...
+2025-01-16 17:01:21,410 - INFO - No new or modified files to process
+2025-01-16 17:01:21,554 - INFO - Found 11 unique documents in collection
+2025-01-16 17:01:21,554 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 17:01:21,554 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 17:01:21,554 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 17:01:21,554 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 17:01:21,554 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 17:01:21,554 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 17:01:21,554 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 17:01:21,554 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 17:01:21,554 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 17:01:21,554 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 17:01:21,554 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 17:01:21,555 - INFO - === Document Loading Verification ===
+2025-01-16 17:01:21,555 - INFO - Total unique documents in collection: 11
+2025-01-16 17:01:21,555 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 17:01:21,555 - INFO -   Pages: 94
+2025-01-16 17:01:21,555 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 17:01:21,555 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 17:01:21,555 - INFO -   Pages: 85
+2025-01-16 17:01:21,555 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 17:01:21,555 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 17:01:21,555 - INFO -   Pages: 80
+2025-01-16 17:01:21,555 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 17:01:21,555 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 17:01:21,555 - INFO -   Pages: 130
+2025-01-16 17:01:21,555 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 17:01:21,556 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 17:01:21,556 - INFO -   Pages: 88
+2025-01-16 17:01:21,556 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 17:01:21,556 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 17:01:21,556 - INFO -   Pages: 114
+2025-01-16 17:01:21,556 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 17:01:21,556 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 17:01:21,556 - INFO -   Pages: 169
+2025-01-16 17:01:21,556 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 17:01:21,556 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 17:01:21,556 - INFO -   Pages: 100
+2025-01-16 17:01:21,556 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 17:01:21,556 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 17:01:21,556 - INFO -   Pages: 171
+2025-01-16 17:01:21,556 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 17:01:21,556 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 17:01:21,556 - INFO -   Pages: 76
+2025-01-16 17:01:21,556 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 17:01:21,556 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 17:01:21,556 - INFO -   Pages: 113
+2025-01-16 17:01:21,556 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 17:01:21,556 - INFO - === End Verification ===
+2025-01-16 17:01:21,556 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 17:02:00,421 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 17:02:02,616 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 17:02:06,769 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 17:02:06,772 - INFO - Starting initial document check and verification...
+2025-01-16 17:02:07,883 - INFO - No new or modified files to process
+2025-01-16 17:02:08,096 - INFO - Found 11 unique documents in collection
+2025-01-16 17:02:08,096 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 17:02:08,096 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 17:02:08,096 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 17:02:08,096 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 17:02:08,096 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 17:02:08,096 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 17:02:08,097 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 17:02:08,097 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 17:02:08,097 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 17:02:08,097 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 17:02:08,097 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 17:02:08,097 - INFO - === Document Loading Verification ===
+2025-01-16 17:02:08,097 - INFO - Total unique documents in collection: 11
+2025-01-16 17:02:08,097 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 17:02:08,097 - INFO -   Pages: 94
+2025-01-16 17:02:08,097 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 17:02:08,098 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 85
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 17:02:08,098 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 80
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 17:02:08,098 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 130
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 17:02:08,098 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 88
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 17:02:08,098 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 114
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 17:02:08,098 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 169
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 17:02:08,098 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 100
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 17:02:08,098 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 171
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 17:02:08,098 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 76
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 17:02:08,098 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 17:02:08,098 - INFO -   Pages: 113
+2025-01-16 17:02:08,098 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 17:02:08,098 - INFO - === End Verification ===
+2025-01-16 17:02:08,098 - INFO - Successfully verified 11 documents in collection.
+2025-01-16 17:02:38,679 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-16 17:02:41,058 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-16 17:02:43,012 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-16 17:02:47,057 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-16 17:02:47,058 - INFO - Starting initial document check and verification...
+2025-01-16 17:02:47,484 - INFO - No new or modified files to process
+2025-01-16 17:02:47,632 - INFO - Found 11 unique documents in collection
+2025-01-16 17:02:47,633 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-16 17:02:47,633 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-16 17:02:47,633 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-16 17:02:47,633 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-16 17:02:47,633 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-16 17:02:47,633 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-16 17:02:47,633 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-16 17:02:47,633 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-16 17:02:47,633 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-16 17:02:47,633 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-16 17:02:47,633 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-16 17:02:47,634 - INFO - === Document Loading Verification ===
+2025-01-16 17:02:47,634 - INFO - Total unique documents in collection: 11
+2025-01-16 17:02:47,634 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 94
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-16 17:02:47,634 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 85
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-16 17:02:47,634 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 80
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-16 17:02:47,634 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 130
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-16 17:02:47,634 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 88
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-16 17:02:47,634 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 114
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-16 17:02:47,634 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 169
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-16 17:02:47,634 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 100
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-16 17:02:47,634 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 171
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-16 17:02:47,634 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 76
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-16 17:02:47,634 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-16 17:02:47,634 - INFO -   Pages: 113
+2025-01-16 17:02:47,634 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-16 17:02:47,634 - INFO - === End Verification ===
+2025-01-16 17:02:47,634 - INFO - Successfully verified 11 documents in collection.
+2025-01-17 10:38:23,710 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-17 10:38:26,577 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-17 10:38:30,031 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-17 10:38:30,032 - INFO - Starting initial document check and verification...
+2025-01-17 10:38:30,504 - INFO - No new or modified files to process
+2025-01-17 10:38:30,628 - INFO - Found 11 unique documents in collection
+2025-01-17 10:38:30,628 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-17 10:38:30,628 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-17 10:38:30,628 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-17 10:38:30,628 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-17 10:38:30,628 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-17 10:38:30,628 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-17 10:38:30,628 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-17 10:38:30,628 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-17 10:38:30,628 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-17 10:38:30,628 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-17 10:38:30,628 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-17 10:38:30,629 - INFO - === Document Loading Verification ===
+2025-01-17 10:38:30,629 - INFO - Total unique documents in collection: 11
+2025-01-17 10:38:30,629 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-17 10:38:30,629 - INFO -   Pages: 94
+2025-01-17 10:38:30,629 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-17 10:38:30,629 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-17 10:38:30,629 - INFO -   Pages: 85
+2025-01-17 10:38:30,629 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-17 10:38:30,629 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-17 10:38:30,629 - INFO -   Pages: 80
+2025-01-17 10:38:30,629 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-17 10:38:30,629 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-17 10:38:30,629 - INFO -   Pages: 130
+2025-01-17 10:38:30,629 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-17 10:38:30,629 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-17 10:38:30,629 - INFO -   Pages: 88
+2025-01-17 10:38:30,629 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-17 10:38:30,629 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-17 10:38:30,629 - INFO -   Pages: 114
+2025-01-17 10:38:30,629 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-17 10:38:30,630 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-17 10:38:30,630 - INFO -   Pages: 169
+2025-01-17 10:38:30,630 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-17 10:38:30,630 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-17 10:38:30,630 - INFO -   Pages: 100
+2025-01-17 10:38:30,630 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-17 10:38:30,630 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-17 10:38:30,630 - INFO -   Pages: 171
+2025-01-17 10:38:30,630 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-17 10:38:30,630 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-17 10:38:30,630 - INFO -   Pages: 76
+2025-01-17 10:38:30,630 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-17 10:38:30,630 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-17 10:38:30,630 - INFO -   Pages: 113
+2025-01-17 10:38:30,630 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-17 10:38:30,630 - INFO - === End Verification ===
+2025-01-17 10:38:30,630 - INFO - Successfully verified 11 documents in collection.
+2025-01-17 10:38:49,645 - WARNING - Unauthorized: /api/aggs_data/DJIA/
+2025-01-17 10:38:49,648 - WARNING - Unauthorized: /api/aggs_data/DJIA/
+2025-01-17 10:38:49,710 - WARNING - Not Found: /api/token/refresh/
+2025-01-17 10:38:49,720 - WARNING - Not Found: /api/token/refresh/
+2025-01-17 10:47:09,850 - WARNING - Unauthorized: /api/aggs_data/DJIA/
+2025-01-17 10:47:09,854 - WARNING - Unauthorized: /api/aggs_data/DJIA/
+2025-01-17 10:47:09,938 - WARNING - Not Found: /api/token/refresh/
+2025-01-17 10:47:09,940 - WARNING - Not Found: /api/token/refresh/
+2025-01-17 10:47:18,928 - INFO - No new or modified files to process
+2025-01-17 10:47:20,050 - INFO - Found 11 unique documents in collection
+2025-01-17 10:47:20,050 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-17 10:47:20,050 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-17 10:47:20,050 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-17 10:47:20,050 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-17 10:47:20,050 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-17 10:47:20,050 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-17 10:47:20,050 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-17 10:47:20,051 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-17 10:47:20,051 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-17 10:47:20,051 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-17 10:47:20,051 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-17 10:47:22,104 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-17 11:06:06,385 - INFO - /Users/yawar/Desktop/investment_chat_backend/investment_chat_project/settings.py changed, reloading.
+2025-01-17 11:06:08,773 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-17 11:06:10,815 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-01-17 11:06:14,484 - INFO - ChromaDB initialized successfully with persistent storage
+2025-01-17 11:06:14,485 - INFO - Starting initial document check and verification...
+2025-01-17 11:06:14,899 - INFO - No new or modified files to process
+2025-01-17 11:06:15,032 - INFO - Found 11 unique documents in collection
+2025-01-17 11:06:15,032 - INFO - Document: NASDAQ_AMZN_2023.pdf, Pages: 94
+2025-01-17 11:06:15,032 - INFO - Document: NASDAQ_MSFT_2023.pdf, Pages: 85
+2025-01-17 11:06:15,032 - INFO - Document: NASDAQ_AAPL_2023.pdf, Pages: 80
+2025-01-17 11:06:15,032 - INFO - Document: NASDAQ_TSLA_2023.pdf, Pages: 130
+2025-01-17 11:06:15,032 - INFO - Document: NYSE_PG_2023.pdf, Pages: 88
+2025-01-17 11:06:15,032 - INFO - Document: NYSE_CVX_2023.pdf, Pages: 114
+2025-01-17 11:06:15,032 - INFO - Document: NASDAQ_NVDA_2023.pdf, Pages: 169
+2025-01-17 11:06:15,032 - INFO - Document: NASDAQ_ADBE_2023.pdf, Pages: 100
+2025-01-17 11:06:15,032 - INFO - Document: NYSE_XOM_2023.pdf, Pages: 171
+2025-01-17 11:06:15,032 - INFO - Document: NASDAQ_COST_2023.pdf, Pages: 76
+2025-01-17 11:06:15,032 - INFO - Document: NASDAQ_AVGO_2023.pdf, Pages: 113
+2025-01-17 11:06:15,033 - INFO - === Document Loading Verification ===
+2025-01-17 11:06:15,033 - INFO - Total unique documents in collection: 11
+2025-01-17 11:06:15,033 - INFO - Document: NASDAQ_AMZN_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 94
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:46:58.926453
+2025-01-17 11:06:15,033 - INFO - Document: NASDAQ_MSFT_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 85
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:47:24.955402
+2025-01-17 11:06:15,033 - INFO - Document: NASDAQ_AAPL_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 80
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:47:43.713191
+2025-01-17 11:06:15,033 - INFO - Document: NASDAQ_TSLA_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 130
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:47:58.112863
+2025-01-17 11:06:15,033 - INFO - Document: NYSE_PG_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 88
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:48:31.742254
+2025-01-17 11:06:15,033 - INFO - Document: NYSE_CVX_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 114
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:48:56.987000
+2025-01-17 11:06:15,033 - INFO - Document: NASDAQ_NVDA_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 169
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:49:25.271075
+2025-01-17 11:06:15,033 - INFO - Document: NASDAQ_ADBE_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 100
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:50:38.330155
+2025-01-17 11:06:15,033 - INFO - Document: NYSE_XOM_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 171
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:51:02.876683
+2025-01-17 11:06:15,033 - INFO - Document: NASDAQ_COST_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 76
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:51:50.964539
+2025-01-17 11:06:15,033 - INFO - Document: NASDAQ_AVGO_2023.pdf
+2025-01-17 11:06:15,033 - INFO -   Pages: 113
+2025-01-17 11:06:15,033 - INFO -   Processed: 2024-10-24T18:52:06.115036
+2025-01-17 11:06:15,034 - INFO - === End Verification ===
+2025-01-17 11:06:15,034 - INFO - Successfully verified 11 documents in collection.
