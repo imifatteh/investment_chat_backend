@@ -30,7 +30,7 @@ class SignupView(views.APIView):
         # Check if the email already exists
         if User.objects.filter(email=request.data.get("email")).exists():
             return Response(
-                {'error': "A user with this email already exists."},
+                {"error": "A user with this email already exists."},
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
@@ -39,8 +39,7 @@ class SignupView(views.APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(
-                {"message": "User created successfully"},
-                status=status.HTTP_201_CREATED,
+                {"message": "User created successfully"}, status=status.HTTP_201_CREATED
             )
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
