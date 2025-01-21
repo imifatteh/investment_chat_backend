@@ -61,3 +61,6 @@ cachetools==5.5.0
 
 # Third-party Services
 polygon-api-client==1.14.3
+
+# Formatting and Linting
+black==24.10.0
