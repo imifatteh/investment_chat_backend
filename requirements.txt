@@ -61,3 +61,9 @@ cachetools==5.5.0
 
 # Third-party Services
 polygon-api-client==1.14.3
+
+# Formatting and Linting
+ruff==0.9.2
+
+# Pre-commit Hooks
+pre-commit==4.1.0

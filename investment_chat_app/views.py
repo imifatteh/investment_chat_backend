@@ -13,10 +13,7 @@ from django.views.decorators.csrf import csrf_exempt
 import json
 import chromadb
 from chromadb.utils import embedding_functions
-import textwrap
-from tqdm import tqdm
 import time
-from pathlib import Path
 
 # Configure detailed logging
 logging.basicConfig(
@@ -346,11 +343,11 @@ def generate_gpt_response(user_message, context):
         )
 
         # Enhanced system prompt with document inventory
-        system_prompt = f"""You are a helpful assistant analyzing EDGAR financial documents. 
+        system_prompt = f"""You are a helpful assistant analyzing EDGAR financial documents.
         You have access to the following documents:
         {docs_summary}
-        
-        Provide detailed, accurate responses based on the context provided. 
+
+        Provide detailed, accurate responses based on the context provided.
         When discussing document availability, always refer to the complete list above.
         If the information isn't in the immediate context, say so but mention if it might be available in one of the listed documents."""
 

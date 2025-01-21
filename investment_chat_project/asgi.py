@@ -1,7 +1,6 @@
 import os
 import threading
 from django.core.asgi import get_asgi_application
-from django.conf import settings
 from channels.routing import ProtocolTypeRouter, URLRouter
 from channels.auth import AuthMiddlewareStack
 from polygon_ai.polygon_websocket import PolygonWebSocketService

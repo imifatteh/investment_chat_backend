@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 import dj_database_url
+import django_heroku
+
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -192,7 +194,5 @@ LOGGING = {
 
 POLYGON_API_KEY = os.environ.get("POLYGON_API_KEY")
 POLYGON_BASE_URL = os.environ.get("POLYGON_BASE_URL")
-
-import django_heroku
 
 django_heroku.settings(locals())
