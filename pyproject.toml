@@ -4,3 +4,9 @@ line-length = 88
 [tool.ruff.lint]
 select = ["E", "F", "W"]
 ignore = ["E501"]
+
+[tool.ruff.format]
+skip-magic-trailing-comma = true
+exclude = ["migrations/"]
+line-ending = "lf"
+quote-style = "double"
