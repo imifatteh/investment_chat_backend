@@ -13714,3 +13714,6 @@ smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepte
 2025-01-21 14:51:46,953 - INFO -   Processed: 2024-10-24T18:52:06.115036
 2025-01-21 14:51:46,953 - INFO - === End Verification ===
 2025-01-21 14:51:46,953 - INFO - Successfully verified 11 documents in collection.
+2025-01-21 14:52:35,286 - INFO - /Users/yawar/Desktop/investment_chat_backend/signup/views.py changed, reloading.
+2025-01-21 14:52:37,313 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-01-21 14:52:38,820 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
