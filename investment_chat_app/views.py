@@ -4,11 +4,9 @@ import json
 import logging
 import os
 import time
-import textwrap
 
 from datetime import datetime
 from django.shortcuts import render
-from django.http import JsonResponse
 from django.conf import settings
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
@@ -19,8 +17,6 @@ from chromadb.utils import embedding_functions
 from dotenv import load_dotenv
 from openai import OpenAI
 from PyPDF2 import PdfReader
-from pathlib import Path
-from tqdm import tqdm
 
 from investment_chat_app.models import UserData
 
@@ -352,11 +348,11 @@ def generate_gpt_response(user_message, context):
         )
 
         # Enhanced system prompt with document inventory
-        system_prompt = f"""You are a helpful assistant analyzing EDGAR financial documents. 
+        system_prompt = f"""You are a helpful assistant analyzing EDGAR financial documents.
         You have access to the following documents:
         {docs_summary}
-        
-        Provide detailed, accurate responses based on the context provided. 
+
+        Provide detailed, accurate responses based on the context provided.
         When discussing document availability, always refer to the complete list above.
         If the information isn't in the immediate context, say so but mention if it might be available in one of the listed documents."""
 
@@ -427,6 +423,8 @@ def process_message(request):
 
         # Get relevant context based on the user's question
         context = get_relevant_context(user_message)
+
+        # print(context)
 
         # Generate response using GPT
         gpt_response = generate_gpt_response(user_message, context)

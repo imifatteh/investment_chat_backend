@@ -19,10 +19,7 @@ class StockConsumer(AsyncWebsocketConsumer):
         data = json.loads(text_data)
         await self.channel_layer.group_send(
             self.group_name,
-            {
-                "type": "stock_update",
-                "message": data.get("message", ""),
-            },
+            {"type": "stock_update", "message": data.get("message", "")},
         )
 
     async def stock_update(self, event):

@@ -35,11 +35,7 @@ class PolygonWebSocketService:
         print(message)
         channel_layer = get_channel_layer()
         async_to_sync(channel_layer.group_send)(
-            "stocks_group",
-            {
-                "type": "stock_update",
-                "message": message,
-            },
+            "stocks_group", {"type": "stock_update", "message": message}
         )
 
     def on_error(self, error):

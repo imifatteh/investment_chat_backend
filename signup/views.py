@@ -1,5 +1,3 @@
-import random
-
 from django.contrib.auth import authenticate
 from django.contrib.auth.tokens import default_token_generator
 from django.contrib.auth.models import User
@@ -41,8 +39,7 @@ class SignupView(views.APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(
-                {"message": "User created successfully"},
-                status=status.HTTP_201_CREATED,
+                {"message": "User created successfully"}, status=status.HTTP_201_CREATED
             )
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
