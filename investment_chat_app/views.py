@@ -1,19 +1,24 @@
-import os
+import chromadb
 import hashlib
+import json
+import logging
+import os
+import time
+
 from datetime import datetime
 from django.shortcuts import render
-from django.http import JsonResponse
 from django.conf import settings
-from openai import OpenAI
-from dotenv import load_dotenv
-import logging
-from PyPDF2 import PdfReader
-from django.views.decorators.http import require_http_methods
-from django.views.decorators.csrf import csrf_exempt
-import json
-import chromadb
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from rest_framework import status
+from rest_framework.permissions import IsAuthenticated
+
 from chromadb.utils import embedding_functions
-import time
+from dotenv import load_dotenv
+from openai import OpenAI
+from PyPDF2 import PdfReader
+
+from investment_chat_app.models import UserData
 
 # Configure detailed logging
 logging.basicConfig(
@@ -394,16 +399,24 @@ def home(request):
     return render(request, "investment_chat_app/home.html")
 
 
-@csrf_exempt
-@require_http_methods(["POST"])
+@api_view(["POST"])
+@permission_classes([IsAuthenticated])
 def process_message(request):
     try:
-        print(os.getenv("OPENAI_API_KEY"))
         data = json.loads(request.body)
         user_message = data.get("message", "")
 
         if not user_message:
-            return JsonResponse({"error": "No message provided"}, status=400)
+            return Response(
+                {"error": "No message provided"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
+        # Get or create user data for the current user
+        user_data, created = UserData.objects.get_or_create(user=request.user)
+
+        # Update user chat sent count
+        user_data.total_chats_sent += 1
+        user_data.save()
 
         # Check for and process any new documents
         load_documents_to_chromadb()
@@ -416,13 +429,17 @@ def process_message(request):
         # Generate response using GPT
         gpt_response = generate_gpt_response(user_message, context)
 
-        return JsonResponse({"response": gpt_response})
+        # Update user chat received count
+        user_data.total_chats_received += 1
+        user_data.save()
+
+        return Response({"response": gpt_response}, status=status.HTTP_201_CREATED)
     except json.JSONDecodeError:
         logger.error("Invalid JSON received")
-        return JsonResponse({"error": "Invalid JSON"}, status=400)
+        return Response({"error": "Invalid JSON"}, status=status.HTTP_400_BAD_REQUEST)
     except Exception as e:
         logger.error(f"Error in process_message: {str(e)}")
-        return JsonResponse({"error": str(e)}, status=500)
+        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 # Initial document load and verification when server starts
