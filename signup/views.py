@@ -65,6 +65,21 @@ class SigninView(views.APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
+        try:
+            # Try to find the user by username
+            user = User.objects.get(username=username)
+        except User.DoesNotExist:
+            return Response(
+                {"error": "Invalid username or password."},
+                status=status.HTTP_401_UNAUTHORIZED,
+            )
+
+        # Check if the password is incorrect
+        if not user.check_password(password):
+            return Response(
+                {"error": "Invalid password."}, status=status.HTTP_401_UNAUTHORIZED
+            )
+
         # Authenticate user
         user = authenticate(request, username=username, password=password)
         if user is not None:
@@ -85,8 +100,7 @@ class SigninView(views.APIView):
             )
         else:
             return Response(
-                {"error": "Invalid username or password."},
-                status=status.HTTP_401_UNAUTHORIZED,
+                {"error": "Authentication failed."}, status=status.HTTP_401_UNAUTHORIZED
             )
 
 

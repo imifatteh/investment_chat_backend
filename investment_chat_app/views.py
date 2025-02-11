@@ -429,6 +429,19 @@ def process_message(request):
         # Generate response using GPT
         gpt_response = generate_gpt_response(user_message, context)
 
+        if (
+            gpt_response.find(
+                "I'm sorry, but I encountered an error while processing your request."
+            )
+            != -1
+        ):
+            return Response(
+                {
+                    "error": "I'm sorry but I encountered an error while processing your request."
+                },
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            )
+
         # Update user chat received count
         user_data.total_chats_received += 1
         user_data.save()
