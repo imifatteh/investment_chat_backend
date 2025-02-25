@@ -17,3 +17,4 @@ __pycache__/
 .env
 dump.rdb
 edgar_processing.log
+investment_chat_app/SEC_FILINGS
