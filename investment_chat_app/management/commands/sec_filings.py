@@ -154,6 +154,6 @@ class Command(BaseCommand):
         else:
             self.stderr.write(
                 self.style.ERROR(
-                    f"Failed to download PDF for {ticker}. Status Code: {response.status_code}"
+                    f"❌ Failed to download PDF for {ticker}. Status Code: {response.status_code}"
                 )
             )
