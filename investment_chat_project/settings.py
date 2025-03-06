@@ -187,4 +187,8 @@ LOGGING = {
 POLYGON_API_KEY = os.environ.get("POLYGON_API_KEY")
 POLYGON_BASE_URL = os.environ.get("POLYGON_BASE_URL")
 
+SEC_API_KEY = os.environ.get("SEC_API_KEY")
+SEC_API_URL = os.environ.get("SEC_API_URL")
+PDF_CONV_URL = os.environ.get("PDF_CONV_URL")
+
 django_heroku.settings(locals())
