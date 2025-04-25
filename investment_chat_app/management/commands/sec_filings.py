@@ -117,7 +117,11 @@ class Command(BaseCommand):
         os.makedirs(save_dir, exist_ok=True)
 
         if response.status_code == 200:
-            file_name = f"{ticker}_{form_type}_{year}.pdf"
+            # Format filing_date to include only the date part
+            filing_date_formatted = datetime.strptime(
+                filing_date[:10], "%Y-%m-%d"
+            ).strftime("%Y-%m-%d")
+            file_name = f"{ticker}_{form_type}_{filing_date_formatted}.pdf"
             file_path = os.path.join(save_dir, file_name)
 
             with open(file_path, "wb") as pdf_file:
@@ -132,11 +136,8 @@ class Command(BaseCommand):
             # Store metadata in the database
             sec_filing, created = SECFilings.objects.update_or_create(
                 ticker=ticker,
-                defaults={
-                    "form_type": form_type,
-                    "filing_date": filing_date,
-                    "path_to_doc": file_path,
-                },
+                filing_date=filing_date,
+                defaults={"form_type": form_type, "path_to_doc": file_path},
             )
             if created:
                 self.stdout.write(

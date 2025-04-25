@@ -26,4 +26,5 @@ urlpatterns = [
     path("process_message/", views.process_message, name="process_message"),
     path("api/", include("polygon_ai.urls")),
     path("api/auth/", include("signup.urls")),
+    path("api/", include("investment_chat_app.urls")),
 ]
