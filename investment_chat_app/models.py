@@ -9,7 +9,10 @@ class UserData(models.Model):
 
 
 class SECFilings(models.Model):
-    ticker = models.CharField(max_length=10, unique=True)
+    ticker = models.CharField(max_length=10)
     form_type = models.CharField(max_length=10)
     filing_date = models.DateField()
     path_to_doc = models.URLField()
+
+    class Meta:
+        unique_together = ("ticker", "filing_date")
